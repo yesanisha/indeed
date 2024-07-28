@@ -1,0 +1,40 @@
+<html>
+<header>
+    <div class="header">
+        <link rel="stylesheet" href="basefile.css">
+    <link rel="stylesheet" href="basefile.css">
+    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="job.js"></script>
+
+        <a href="land.html" class="logo"><img src="image-removebg-preview-2.png" alt="indeed"></a>
+
+        <div class="header-right">
+            <a class="active" href="land.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="job.html">Jobs</a>
+            <a href="book.html" class="book-link"><button class="book-button">BOOK</button></a>
+        </div>
+    </div>
+    <!-- header ends -->
+
+    <div class="main-heading">
+        <br>
+        <h1><span id="1">Start your dream career today.</h1>
+        <p><i style="color: rgb(152, 164, 198);">
+            Finding the right career isn't just about a paycheck, it's about
+                finding fulfillment</i></p>
+        </span>
+    </div>
+    <section class="job-search">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search for jobs..." oninput="filterJobs()">
+            <button id="search-button" onclick="filterJobs()"><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+    
+    <div id="jobs-container"></div>
+
+</body>
+
+</html>

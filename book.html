@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Profile</title>
+    <link rel="stylesheet" href="basefile.css">
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="book.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="land.html" class="logo"><img src="image-removebg-preview-2.png" alt="Indeed"></a>
+            <div class="header-right">
+                <a href="land.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="job.html">Jobs</a>
+                <a href="book.html" class="book-link" class="active"><button class="book-button">BOOK</button></a>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="main-heading">
+            <br>
+            <h1>Create Your Job Profile</h1>
+            <p><i style="color: rgb(152, 164, 198);">Build a profile to get noticed by employers and find your dream job.</i></p>
+        </div>
+        <!-- main-heading ends -->
+
+        <main>
+            <form id="profile_form" enctype="multipart/form-data">
+                <div class="row">
+                    <label class="required" for="photo">Profile Photo:</label>
+                    <input id="photo" class="input" name="photo" type="file" accept="image/*" />
+                </div>
+                <div class="row">
+                    <label class="required" for="full_name">Full Name:</label>
+                    <input id="full_name" class="input" name="full_name" type="text" required />
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Email:</label>
+                    <input id="email" class="input" name="email" type="email" required />
+                </div>
+                <div class="row">
+                    <label class="required" for="phone">Phone Number:</label>
+                    <input id="phone" class="input" name="phone" type="text" required />
+                </div>
+                <div class="row">
+                    <label class="required" for="skills">Skills:</label>
+                    <textarea id="skills" class="input" name="skills" rows="5" required></textarea>
+                </div>
+                <div class="row">
+                    <label class="required" for="experience">Experience:</label>
+                    <textarea id="experience" class="input" name="experience" rows="5" required></textarea>
+                </div>
+                <div class="row">
+                    <label class="required" for="education">Education:</label>
+                    <textarea id="education" class="input" name="education" rows="5" required></textarea>
+                </div>
+                <div class="row">
+                    <label for="linkedin">LinkedIn Profile:</label>
+                    <input id="linkedin" class="input" name="linkedin" type="url" />
+                </div>
+                <div class="row">
+                    <label for="portfolio">Portfolio URL:</label>
+                    <input id="portfolio" class="input" name="portfolio" type="url" />
+                </div>
+                <input id="submit_button" type="submit" value="Create Profile" />
+            </form>
+        </main>
+        <!-- main ends -->
+
+        <footer>
+            <!-- Footer content -->
+        </footer>
+    </header>
+
+    <!-- Popup Message -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p>Profile created successfully!</p>
+        </div>
+    </div>
+
+ 
+</body>
+
+</html>
